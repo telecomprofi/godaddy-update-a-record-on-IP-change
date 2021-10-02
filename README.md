@@ -3,14 +3,14 @@
 * Script checks public IP of your Cloud VM and if its different from A record of your DNS updates it with newly asigned IP address.
  place files into your home dir @ VM with non-eleastic/permanent Public IP address and automate update of DNS A record @ Godaddy.
 ```
-#tree ~/ | grep 'godaddy'
-├── godaddy_ip.txt
-├── update_godaddy.py
+    #tree ~/ | grep 'godaddy'
+    ├── godaddy_ip.txt
+    ├── update_godaddy.py
 ```
 
 * to make it autorun:
 ```    
-#echo 'python3 ~/update_godaddy.py' >> ~/.bashrc
+    #echo 'python3 ~/update_godaddy.py' >> ~/.bashrc
 ```
 
 
@@ -23,9 +23,10 @@ Checks:
 </br>
 a) with dig in shell
 </br>
-```
- #dig @8.8.8.8 +short NS <domain.com>
-```
+
+
+    #dig @8.8.8.8 +short NS <domain.com>
+
 
 </br>
 or
